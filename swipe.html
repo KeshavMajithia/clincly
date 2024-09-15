@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Budget Section -->
+    <div id="budget-section">
+        <h3>Select your Budget</h3>
+        <input type="range" id="budget-slider" min="1000" max="10000" value="5000">
+        <p>Budget: $<span id="budget-display">5000</span></p>
+        <button id="proceed-budget">Proceed</button>
+    </div>
+
+    <!-- Swipe Sections -->
+    <div id="hospital-section" class="container hidden">
+        <h3>Swipe to Select Hospital</h3>
+        <div id="hospital-cards"></div>
+    </div>
+
+    <div id="doctor-section" class="container hidden">
+        <h3>Swipe to Select Doctor</h3>
+        <div id="doctor-cards"></div>
+    </div>
+
+    <div id="room-section" class="container hidden">
+        <h3>Swipe to Select Room</h3>
+        <div id="room-cards"></div>
+    </div>
+
+    <!-- Final Selection -->
+    <div id="final-selection" class="hidden">
+        <h2>Your Selection</h2>
+        <p>Hospital: <span id="final-hospital"></span></p>
+        <p>Doctor: <span id="final-doctor"></span></p>
+        <p>Room: <span id="final-room"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

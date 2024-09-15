@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Clinicly</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#f8fafb] group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e8eef3] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0e151b]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_330)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_330"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#0e151b] text-lg font-bold leading-tight tracking-[-0.015em]">Clinicly</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0e151b] text-sm font-medium leading-normal" href="#">Home</a>
+              <a class="text-[#0e151b] text-sm font-medium leading-normal" href="#">Medical Bills</a>
+              <a class="text-[#0e151b] text-sm font-medium leading-normal" href="#">Organizations</a>
+              <a class="text-[#0e151b] text-sm font-medium leading-normal" href="#">Events</a>
+              <a class="text-[#0e151b] text-sm font-medium leading-normal" href="#">Stories</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#2c90e2] text-[#f8fafb] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Donate</span>
+            </button>
+          </div>
+        </header>
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[920px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#0e151b] tracking-light text-[32px] font-bold leading-tight">Charity on the go</p>
+                <p class="text-[#507695] text-sm font-normal leading-normal">Having difficulties paying your bills? We got you covered!</p>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/17b88f5d-1f0c-4cc8-8bd1-b13bd4fccbe8.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#507695] text-sm font-normal leading-normal">Organizations</p>
+                  <p class="text-[#0e151b] text-lg font-bold leading-tight tracking-[-0.015em]">St. Jude Children's Research Hospital</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#507695] text-base font-normal leading-normal">501c3 non-profit organization</p>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#2c90e2] text-[#f8fafb] text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">Apply</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/7cc90f08-1350-432c-a59b-b0feb6edbe58.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#507695] text-sm font-normal leading-normal">Organizations</p>
+                  <p class="text-[#0e151b] text-lg font-bold leading-tight tracking-[-0.015em]">Make-A-Wish America</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#507695] text-base font-normal leading-normal">501c3 non-profit organization</p>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#2c90e2] text-[#f8fafb] text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">Apply</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/30983eab-5a8e-4f04-8313-ff52c3ec75d6.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#507695] text-sm font-normal leading-normal">Organizations</p>
+                  <p class="text-[#0e151b] text-lg font-bold leading-tight tracking-[-0.015em]">American Red Cross</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#507695] text-base font-normal leading-normal">501c3 non-profit organization</p>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#2c90e2] text-[#f8fafb] text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">Apply</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/772c7217-9a62-4b91-8fdb-dd2d866c806b.png");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#507695] text-sm font-normal leading-normal">Organizations</p>
+                  <p class="text-[#0e151b] text-lg font-bold leading-tight tracking-[-0.015em]">Feeding America</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#507695] text-base font-normal leading-normal">501c3 non-profit organization</p>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#2c90e2] text-[#f8fafb] text-sm font-medium leading-normal"
+                    >
+                      <span class="truncate">Apply</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col w-[360px]">
+            <h3 class="text-[#0e151b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Find a donor</h3>
+            <div class="flex flex-wrap gap-3 p-4">
+              <label
+                class="text-sm font-medium leading-normal flex items-center justify-center rounded-xl border border-[#d1dce6] px-4 h-11 text-[#0e151b] has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-[#2c90e2] relative cursor-pointer"
+              >
+                Blood type
+                <input type="radio" class="invisible absolute" name="e8510317-41ea-4e6a-b0f9-80e3fc96f7b7" />
+              </label>
+              <label
+                class="text-sm font-medium leading-normal flex items-center justify-center rounded-xl border border-[#d1dce6] px-4 h-11 text-[#0e151b] has-[:checked]:border-[3px] has-[:checked]:px-3.5 has-[:checked]:border-[#2c90e2] relative cursor-pointer"
+              >
+                Organ
+                <input type="radio" class="invisible absolute" name="e8510317-41ea-4e6a-b0f9-80e3fc96f7b7" />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <input
+                  placeholder="Search donors..."
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0e151b] focus:outline-0 focus:ring-0 border-none bg-[#e8eef3] focus:border-none h-14 placeholder:text-[#507695] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex px-4 py-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-[#e8eef3] text-[#0e151b] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">List yourself</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
