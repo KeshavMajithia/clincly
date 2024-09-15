@@ -1,0 +1,53 @@
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    max-width: 1217px;
+  }
+  
+  .logo {
+    object-fit: contain;
+    flex-shrink: 0;
+    align-self: stretch;
+    aspect-ratio: 1.35;
+    width: 74px;
+  }
+  
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    min-width: 240px;
+  }
+  
+  .nav-item {
+    align-self: stretch;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .auth-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .logout-button {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #ff2b3a;
+  }
