@@ -1,114 +1,109 @@
 <html>
 
 <head>
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
-    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
 
-  <title>Galileo Design</title>
-  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <title>Clinicly</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <style>
-    .modal {
-      display: none; /* Hidden by default */
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-    }
-    .modal-content {
-      background-color: #fff;
-      margin: 15% auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-      max-width: 600px;
-    }
-  </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Black background with opacity */
+        }
+        
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
-    style='font-family: Inter, "Noto Sans", sans-serif;'>
-    <div class="layout-container flex h-full grow flex-col">
-      <div class="gap-1 px-6 flex flex-1 justify-center py-5">
-        <div class="layout-content-container flex flex-col w-80">
-          <div class="flex h-full min-h-[700px] flex-col justify-between bg-white p-4">
-            <div class="flex flex-col gap-4">
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center gap-3 px-3 py-2 rounded-xl bg-[#f0f2f4]">
-                  <div class="text-[#111418]" data-icon="File" data-size="24px" data-weight="fill">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                      viewBox="0 0 256 256">
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col w-80">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between bg-white p-4">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-3 px-3 py-2 rounded-xl bg-[#f0f2f4]">
+                                    <div class="text-[#111418]" data-icon="File" data-size="24px" data-weight="fill">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                       <path
                         d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM152,88V44l44,44Z">
                       </path>
                     </svg>
-                  </div>
-                  <p class="text-[#111418] text-sm font-medium leading-normal">Patient Records</p>
-                </div>
-                <div class="flex items-center gap-3 px-3 py-2">
-                  <div class="text-[#111418]" data-icon="Users" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                      viewBox="0 0 256 256">
+                                    </div>
+                                    <p class="text-[#111418] text-sm font-medium leading-normal">Patient Records</p>
+                                </div>
+                                <div class="flex items-center gap-3 px-3 py-2">
+                                    <div class="text-[#111418]" data-icon="Users" data-size="24px" data-weight="regular">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                       <path
                         d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z">
                       </path>
                     </svg>
-                  </div>
-                  
-                  <p class="text-[#111418] text-sm font-medium leading-normal">Doctor Management</p>
-                </div>
-                <div class="flex items-center gap-3 px-3 py-2">
-                  <div class="text-[#111418]" data-icon="Calendar" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                      viewBox="0 0 256 256">
+                                    </div>
+
+                                    <p class="text-[#111418] text-sm font-medium leading-normal">Doctor Management</p>
+                                </div>
+                                <div class="flex items-center gap-3 px-3 py-2">
+                                    <div class="text-[#111418]" data-icon="Calendar" data-size="24px" data-weight="regular">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                       <path
                         d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z">
                       </path>
                     </svg>
-                  </div>
-                  <p class="text-[#111418] text-sm font-medium leading-normal">Room Availability</p>
-                </div>
-                <div class="flex items-center gap-3 px-3 py-2">
-                  <div class="text-[#111418]" data-icon="Clock" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                      viewBox="0 0 256 256">
+                                    </div>
+                                    <p class="text-[#111418] text-sm font-medium leading-normal">Room Availability</p>
+                                </div>
+                                <div class="flex items-center gap-3 px-3 py-2">
+                                    <div class="text-[#111418]" data-icon="Clock" data-size="24px" data-weight="regular">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                       <path
                         d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z">
                       </path>
                     </svg>
-                  </div>
-                  <p class="text-[#111418] text-sm font-medium leading-normal">Appointments</p>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-1">
-              <div class="flex items-center gap-3 px-3 py-2">
-                <div class="text-[#111418]" data-icon="House" data-size="24px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                    viewBox="0 0 256 256">
+                                    </div>
+                                    <p class="text-[#111418] text-sm font-medium leading-normal">Appointments</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="flex items-center gap-3 px-3 py-2">
+                                <div class="text-[#111418]" data-icon="House" data-size="24px" data-weight="regular">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                     <path
                       d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z">
                     </path>
                   </svg>
+                                </div>
+                                <p class="text-[#111418] text-sm font-medium leading-normal">Dashboard</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-[#111418] text-sm font-medium leading-normal">Dashboard</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-          <header
-            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] px-10 py-3">
-            <div class="flex items-center gap-4 text-[#111418]">
-              <div class="size-4">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] px-10 py-3">
+                        <div class="flex items-center gap-4 text-[#111418]">
+                            <div class="size-4">
+                                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"
                     fill="currentColor"></path>
@@ -116,11 +111,11 @@
                     d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z"
                     fill="currentColor"></path>
                 </svg>
-              </div>
-              <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Clinicly</h2>
-            </div>
-            <div class="flex flex-1 justify-end gap-8">
-              <label class="flex flex-col min-w-40 !h-10 max-w-64">
+                            </div>
+                            <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Healthcare</h2>
+                        </div>
+                        <div class="flex flex-1 justify-end gap-8">
+                            <label class="flex flex-col min-w-40 !h-10 max-w-64">
                 <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
                   <div
                     class="text-[#637588] flex border-none bg-[#f0f2f4] items-center justify-center pl-4 rounded-l-xl border-r-0"
@@ -137,9 +132,8 @@
                     value="" />
                 </div>
               </label>
-              <div class="flex gap-2">
-                <button
-                  class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f0f2f4] text-[#111418] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                            <div class="flex gap-2">
+                                <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f0f2f4] text-[#111418] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
                   <div class="text-[#111418]" data-icon="Bell" data-size="20px" data-weight="regular">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
                       viewBox="0 0 256 256">
@@ -149,8 +143,7 @@
                     </svg>
                   </div>
                 </button>
-                <button
-                  class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f0f2f4] text-[#111418] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                                <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f0f2f4] text-[#111418] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
                   <div class="text-[#111418]" data-icon="Gear" data-size="20px" data-weight="regular">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
                       viewBox="0 0 256 256">
@@ -160,21 +153,19 @@
                     </svg>
                   </div>
                 </button>
-              </div>
-              <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-                style='background-image: url("https://cdn.usegalileo.ai/stability/811c213a-ffa6-4a36-b100-879043346e33.png");'>
-              </div>
-            </div>
-          </header>
-          <div class="flex flex-wrap justify-between gap-3 p-4">
-            <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight min-w-72">Patient Records</p>
-            <button id="addPatientBtn"
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal">
+                            </div>
+                            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://cdn.usegalileo.ai/stability/811c213a-ffa6-4a36-b100-879043346e33.png");'>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="flex flex-wrap justify-between gap-3 p-4">
+                        <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight min-w-72">Patient Records</p>
+                        <button id="addPatientBtn" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal">
               <span class="truncate">Add Patient</span>
             </button>
-          </div>
-          <div class="px-4 py-3">
-            <label class="flex flex-col min-w-40 h-12 w-full">
+                    </div>
+                    <div class="px-4 py-3">
+                        <label class="flex flex-col min-w-40 h-12 w-full">
               <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
                 <div
                   class="text-[#637588] flex border-none bg-[#f0f2f4] items-center justify-center pl-4 rounded-l-xl border-r-0"
@@ -191,176 +182,144 @@
                   value="" />
               </div>
             </label>
-          </div>
-          <div class="px-4 py-3 @container">
-            <div class="flex overflow-hidden rounded-xl border border-[#dce0e5] bg-white">
-              <table class="flex-1">
-                <thead>
-                  <tr class="bg-white">
-                    <th
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      Patient Name
-                    </th>
-                    <th
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      DOB</th>
-                    <th
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      Gender</th>
-                    <th
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      Insurance
-                    </th>
-                    <th
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      Last Visit
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
-                      Maria Garcia
-                    </td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      10/10/1990
-                    </td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Female</td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Aetna</td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      3/8/2022</td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
-                      James Johnson
-                    </td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      11/15/1988
-                    </td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Male</td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Blue Cross
-                    </td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      2/28/2022
-                    </td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
-                      Emily Smith
-                    </td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      9/5/1995</td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Female</td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Cigna</td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      3/2/2022</td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
-                      Daniel Brown
-                    </td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      7/20/1975
-                    </td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Male</td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      United Healthcare
-                    </td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      3/5/2022</td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
-                      Olivia Davis
-                    </td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      12/25/2001
-                    </td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Female</td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Humana</td>
-                    <td
-                      class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      3/10/2022
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <style>
-              @container(max-width:120px) {
-                .table-86058096-6735-41bb-8443-895a5cb36c86-column-120 {
-                  display: none;
-                }
-              }
-
-              @container(max-width:240px) {
-                .table-86058096-6735-41bb-8443-895a5cb36c86-column-240 {
-                  display: none;
-                }
-              }
-
-              @container(max-width:360px) {
-                .table-86058096-6735-41bb-8443-895a5cb36c86-column-360 {
-                  display: none;
-                }
-              }
-
-              @container(max-width:480px) {
-                .table-86058096-6735-41bb-8443-895a5cb36c86-column-480 {
-                  display: none;
-                }
-              }
-
-              @container(max-width:600px) {
-                .table-86058096-6735-41bb-8443-895a5cb36c86-column-600 {
-                  display: none;
-                }
-              }
-            </style>
-          </div>
-          <div class="flex flex-wrap justify-between gap-3 p-4">
-            <h3 class="text-[#111418] tracking-light text-[32px] font-bold leading-tight min-w-72">Doctor Management</h3>
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal"
-            >
+                    </div>
+                    <div class="px-4 py-3 @container">
+                        <div class="flex overflow-hidden rounded-xl border border-[#dce0e5] bg-white">
+                            <table class="flex-1">
+                                <thead>
+                                    <tr class="bg-white">
+                                        <th class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            Patient Name
+                                        </th>
+                                        <th class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            DOB</th>
+                                        <th class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            Gender</th>
+                                        <th class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            Insurance
+                                        </th>
+                                        <th class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            Last Visit
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                                            Maria Garcia
+                                        </td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            10/10/1990
+                                        </td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Female</td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Aetna</td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            3/8/2022</td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                                            James Johnson
+                                        </td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            11/15/1988
+                                        </td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Male</td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Blue Cross
+                                        </td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            2/28/2022
+                                        </td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                                            Emily Smith
+                                        </td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            9/5/1995</td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Female</td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Cigna</td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            3/2/2022</td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                                            Daniel Brown
+                                        </td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            7/20/1975
+                                        </td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Male</td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            United Healthcare
+                                        </td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            3/5/2022</td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                                            Olivia Davis
+                                        </td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            12/25/2001
+                                        </td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Female</td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Humana</td>
+                                        <td class="table-86058096-6735-41bb-8443-895a5cb36c86-column-600 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            3/10/2022
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <style>
+                            @container(max-width:120px) {
+                                .table-86058096-6735-41bb-8443-895a5cb36c86-column-120 {
+                                    display: none;
+                                }
+                            }
+                            
+                            @container(max-width:240px) {
+                                .table-86058096-6735-41bb-8443-895a5cb36c86-column-240 {
+                                    display: none;
+                                }
+                            }
+                            
+                            @container(max-width:360px) {
+                                .table-86058096-6735-41bb-8443-895a5cb36c86-column-360 {
+                                    display: none;
+                                }
+                            }
+                            
+                            @container(max-width:480px) {
+                                .table-86058096-6735-41bb-8443-895a5cb36c86-column-480 {
+                                    display: none;
+                                }
+                            }
+                            
+                            @container(max-width:600px) {
+                                .table-86058096-6735-41bb-8443-895a5cb36c86-column-600 {
+                                    display: none;
+                                }
+                            }
+                        </style>
+                    </div>
+                    <div class="flex flex-wrap justify-between gap-3 p-4">
+                        <h3 class="text-[#111418] tracking-light text-[32px] font-bold leading-tight min-w-72">Doctor Management</h3>
+                        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal">
               <span class="truncate">Edit Doctors</span>
             </button>
-          </div>
-          <div class="px-4 py-3">
-            <label class="flex flex-col min-w-40 h-12 w-full">
+                    </div>
+                    <div class="px-4 py-3">
+                        <label class="flex flex-col min-w-40 h-12 w-full">
               <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
                 <div
                   class="text-[#637588] flex border-none bg-[#f0f2f4] items-center justify-center pl-4 rounded-l-xl border-r-0"
@@ -377,149 +336,125 @@
                   value="" />
               </div>
             </label>
-          </div>
-          <div class="px-4 py-3 @container">
-            <div class="flex overflow-hidden rounded-xl border border-[#dce0e5] bg-white">
-              <table class="flex-1">
-                <thead>
-                  <tr class="bg-white">
-                    <th
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      Doctor Name
-                    </th>
-                    <th
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      Specialty
-                    </th>
-                    <th
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      Room</th>
-                    <th
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      Schedule
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
-                      Dr. Michael Johnson
-                    </td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Cardiologist
-                    </td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Rm 201</td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      M-F 9am - 5pm
-                    </td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
-                      Dr. Sarah Lee
-                    </td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Dermatologist
-                    </td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Rm 305</td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Tu, Th 9am - 1pm; W 2pm - 6pm
-                    </td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
-                      Dr. Robert Miller
-                    </td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Orthopedic Surgeon
-                    </td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Rm 401</td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      M, W, F 8am - 4pm
-                    </td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
-                      Dr. Jennifer Davis
-                    </td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Pediatrician
-                    </td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Rm 108</td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      M-F 10am - 6pm
-                    </td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
-                      Dr. Christopher Wilson
-                    </td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Neurologist
-                    </td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Rm 512</td>
-                    <td
-                      class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Tu, Th 10am - 2pm; F 3pm - 7pm
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <style>
-              @container(max-width:120px) {
-                .table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 {
-                  display: none;
-                }
-              }
+                    </div>
+                    <div class="px-4 py-3 @container">
+                        <div class="flex overflow-hidden rounded-xl border border-[#dce0e5] bg-white">
+                            <table class="flex-1">
+                                <thead>
+                                    <tr class="bg-white">
+                                        <th class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            Doctor Name
+                                        </th>
+                                        <th class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            Specialty
+                                        </th>
+                                        <th class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            Room</th>
+                                        <th class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            Schedule
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                                            Dr. Michael Johnson
+                                        </td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Cardiologist
+                                        </td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Rm 201</td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            M-F 9am - 5pm
+                                        </td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                                            Dr. Sarah Lee
+                                        </td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Dermatologist
+                                        </td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Rm 305</td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Tu, Th 9am - 1pm; W 2pm - 6pm
+                                        </td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                                            Dr. Robert Miller
+                                        </td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Orthopedic Surgeon
+                                        </td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Rm 401</td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            M, W, F 8am - 4pm
+                                        </td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                                            Dr. Jennifer Davis
+                                        </td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Pediatrician
+                                        </td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Rm 108</td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            M-F 10am - 6pm
+                                        </td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 h-[72px] px-4 py-2 w-[400px] text-[#111418] text-sm font-normal leading-normal">
+                                            Dr. Christopher Wilson
+                                        </td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Neurologist
+                                        </td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Rm 512</td>
+                                        <td class="table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Tu, Th 10am - 2pm; F 3pm - 7pm
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <style>
+                            @container(max-width:120px) {
+                                .table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-120 {
+                                    display: none;
+                                }
+                            }
+                            
+                            @container(max-width:240px) {
+                                .table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 {
+                                    display: none;
+                                }
+                            }
+                            
+                            @container(max-width:360px) {
+                                .table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 {
+                                    display: none;
+                                }
+                            }
+                            
+                            @container(max-width:480px) {
+                                .table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 {
+                                    display: none;
+                                }
+                            }
+                        </style>
+                    </div>
 
-              @container(max-width:240px) {
-                .table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-240 {
-                  display: none;
-                }
-              }
-
-              @container(max-width:360px) {
-                .table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-360 {
-                  display: none;
-                }
-              }
-
-              @container(max-width:480px) {
-                .table-fb9f511f-cf49-4ae1-af7b-e36404606ba1-column-480 {
-                  display: none;
-                }
-              }
-            </style>
-          </div>
-          
-          <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Room
-            Availability</h3>
-          <div class="px-4 py-3">
-            <label class="flex flex-col min-w-40 h-12 w-full">
+                    <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Room Availability
+                    </h3>
+                    <div class="px-4 py-3">
+                        <label class="flex flex-col min-w-40 h-12 w-full">
               <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
                 <div
                   class="text-[#637588] flex border-none bg-[#f0f2f4] items-center justify-center pl-4 rounded-l-xl border-r-0"
@@ -536,203 +471,174 @@
                   value="" />
               </div>
             </label>
-          </div>
-          <div class="px-4 py-3 @container">
-            <div class="flex overflow-hidden rounded-xl border border-[#dce0e5] bg-white">
-              <table class="flex-1">
-                <thead>
-                  <tr class="bg-white">
-                    <th
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      Room</th>
-                    <th
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 px-4 py-3 text-left text-[#111418] w-60 text-sm font-medium leading-normal">
-                      Type</th>
-                    <th
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      Status</th>
-                    <th
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
-                      Availability
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      101</td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
-                      <button
-                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-full">
+                    </div>
+                    <div class="px-4 py-3 @container">
+                        <div class="flex overflow-hidden rounded-xl border border-[#dce0e5] bg-white">
+                            <table class="flex-1">
+                                <thead>
+                                    <tr class="bg-white">
+                                        <th class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            Room</th>
+                                        <th class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 px-4 py-3 text-left text-[#111418] w-60 text-sm font-medium leading-normal">
+                                            Type</th>
+                                        <th class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            Status</th>
+                                        <th class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium leading-normal">
+                                            Availability
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            101</td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                                            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-full">
                         <span class="truncate">Exam</span>
                       </button>
-                    </td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Occupied</td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      In use</td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      201</td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
-                      <button
-                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-full">
+                                        </td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Occupied</td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            In use</td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            201</td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                                            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-full">
                         <span class="truncate">Exam</span>
                       </button>
-                    </td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Available
-                    </td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Not in use
-                    </td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      305</td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
-                      <button
-                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-full">
+                                        </td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Available
+                                        </td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Not in use
+                                        </td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            305</td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                                            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-full">
                         <span class="truncate">Surgery</span>
                       </button>
-                    </td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Occupied</td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      In use</td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      402</td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
-                      <button
-                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-full">
+                                        </td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Occupied</td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            In use</td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            402</td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                                            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-full">
                         <span class="truncate">Recovery</span>
                       </button>
-                    </td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Available
-                    </td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Not in use
-                    </td>
-                  </tr>
-                  <tr class="border-t border-t-[#dce0e5]">
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      510</td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
-                      <button
-                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-full">
+                                        </td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Available
+                                        </td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Not in use
+                                        </td>
+                                    </tr>
+                                    <tr class="border-t border-t-[#dce0e5]">
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            510</td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                                            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-full">
                         <span class="truncate">Consultation</span>
                       </button>
-                    </td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      Occupied</td>
-                    <td
-                      class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
-                      In use</td>
-                  </tr>
-                </tbody>
-              </table>
+                                        </td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            Occupied</td>
+                                        <td class="table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 h-[72px] px-4 py-2 w-[400px] text-[#637588] text-sm font-normal leading-normal">
+                                            In use</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <style>
+                            @container(max-width:120px) {
+                                .table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 {
+                                    display: none;
+                                }
+                            }
+                            
+                            @container(max-width:240px) {
+                                .table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 {
+                                    display: none;
+                                }
+                            }
+                            
+                            @container(max-width:360px) {
+                                .table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 {
+                                    display: none;
+                                }
+                            }
+                            
+                            @container(max-width:480px) {
+                                .table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 {
+                                    display: none;
+                                }
+                            }
+                        </style>
+                    </div>
+                </div>
             </div>
-            <style>
-              @container(max-width:120px) {
-                .table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-120 {
-                  display: none;
-                }
-              }
-
-              @container(max-width:240px) {
-                .table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-240 {
-                  display: none;
-                }
-              }
-
-              @container(max-width:360px) {
-                .table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-360 {
-                  display: none;
-                }
-              }
-
-              @container(max-width:480px) {
-                .table-aa99866f-406c-4fb7-a463-e8c48c32dcb2-column-480 {
-                  display: none;
-                }
-              }
-            </style>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div id="addPatientModal" class="modal"></div>
+    <div id="addPatientModal" class="modal"></div>
     <div class="modal-content">
-      <span id="closeModal" class="close">&times;</span>
-      <h2>Add New Patient</h2>
-      <form id="addPatientForm">
-        <label for="patientName">Name:</label>
-        <input type="text" id="patientName" name="patientName" required class="border-2 border-gray-300 p-2 w-full mb-4">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Add New Patient</h2>
+        <form id="addPatientForm">
+            <label for="patientName">Name:</label>
+            <input type="text" id="patientName" name="patientName" required class="border-2 border-gray-300 p-2 w-full mb-4">
 
-        <label for="patientAge">Age:</label>
-        <input type="number" id="patientAge" name="patientAge" required class="border-2 border-gray-300 p-2 w-full mb-4">
+            <label for="patientAge">Age:</label>
+            <input type="number" id="patientAge" name="patientAge" required class="border-2 border-gray-300 p-2 w-full mb-4">
 
-        <label for="patientAddress">Address:</label>
-        <input type="text" id="patientAddress" name="patientAddress" required class="border-2 border-gray-300 p-2 w-full mb-4">
+            <label for="patientAddress">Address:</label>
+            <input type="text" id="patientAddress" name="patientAddress" required class="border-2 border-gray-300 p-2 w-full mb-4">
 
-        <label for="patientPhone">Phone:</label>
-        <input type="tel" id="patientPhone" name="patientPhone" required class="border-2 border-gray-300 p-2 w-full mb-4">
+            <label for="patientPhone">Phone:</label>
+            <input type="tel" id="patientPhone" name="patientPhone" required class="border-2 border-gray-300 p-2 w-full mb-4">
 
-        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
-      </form>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+        </form>
     </div>
-  </div>
-  <script>
-    // Get the modal
-    var modal = document.getElementById("addPatientModal");
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("addPatientModal");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("addPatientBtn");
+        // Get the button that opens the modal
+        var btn = document.getElementById("addPatientBtn");
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementById("closeModal");
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("closeModal");
 
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

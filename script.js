@@ -15,15 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const hospitals = [
         { name: 'City Hospital', price: 2000, image: 'images/hospital1.avif', rating: 4.3 },
-        { name: 'Green Valley Hospital', price: 2500, image: 'images/hospital2.avif', rating: 4.0 },
-        { name: 'Sunrise Medical', price: 3000, image: 'images/hospital3.png', rating: 4.5 },
+        { name: 'Green Valley Hospital', price: 2500, image: 'images/hospital2.png', rating: 4.0 },
+        { name: 'St. Marys Hospital', price: 3000, image: 'images/hospital3.png', rating: 4.5 },
         { name: 'Hope Health Center', price: 4000, image: 'images/hospital4.jpeg', rating: 4.5 },
         { name: 'Healing Hands', price: 4500, image: 'images/hospital5.webp', rating: 4.5 }
     ];
 
     const doctors = [
         { name: 'Dr. John Doe', rating: 4.5, qualification: 'MD, Cardiologist', image: 'images/doctor1.jpeg' },
-        { name: 'Dr. Sarah Lee', rating: 4.8, qualification: 'MBBS, Neurologist', image: 'images/doctor2.jpeg' },
+        { name: 'Dr. Jane Smith', rating: 4.8, qualification: 'MBBS, Neurologist', image: 'images/doctor2.png' },
         { name: 'Dr. Michael Smith', rating: 4.0, qualification: 'Surgeon', image: 'images/doctor3.webp' },
         { name: 'Dr. Anna Brown', rating: 4.9, qualification: 'MD, Dermatologist', image: 'images/doctor4.avif' },
         { name: 'Dr. Paul Green', rating: 4.3, qualification: 'MBBS, Pediatrician', image: 'images/doctor5.avif' }
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { type: 'Private Room', price: 2500, image: 'images/room1.jpg', rating: 4.2 },
         { type: 'Semi-Private Room', price: 1500, image: 'images/room2.jpg', rating: 4.2 },
         { type: 'General Ward', price: 1000, image: 'images/room3.avif', rating: 4.2 },
-        { type: 'Luxury Suite', price: 5000, image: 'images/room4.jpg', rating: 4.2 },
+        { type: 'Deluxe Suite', price: 5000, image: 'images/room4.jpg', rating: 4.2 },
         { type: 'Basic Ward', price: 800, image: 'images/room5.jpeg', rating: 4.2 }
     ];
 
@@ -144,3 +144,15 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'selection.html';
     }
 });
+
+function hosp() {
+    window.location.href = 'hospitalRev.html';
+}
+
+function room() {
+    window.location.href = 'roomRev.html';
+}
+
+function doc() {
+    window.location.href = 'doctorRev.html';
+}
