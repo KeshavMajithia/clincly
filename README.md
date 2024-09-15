@@ -1,3 +1,6 @@
+#Clinicly demo video:
+https://youtu.be/7Z3UX2FJvxM
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
